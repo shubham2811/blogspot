@@ -1,16 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./style/main.less";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
 
-class Welcome extends React.Component {
-    render () {
-        return (
-            <>
-            <h1 className="header">Hello World from React boilerplate</h1>
-            <p>Visit my repository at <a href="https://github.com/nsebhastian/my-react-boilerplate">GitHub</a></p>
-            </>
-        );
-    }
-}
+ReactDOM.render(<App />, document.getElementById('root'));
 
-ReactDOM.render(<Welcome />, document.getElementById("root"));
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
