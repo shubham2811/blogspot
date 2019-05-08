@@ -1,11 +1,20 @@
 import React from 'react';
-
-import './App.css';
-import { TextInput } from "./lib";
+import {BrowserRouter,Route,Link,Switch} from 'react-router-dom';
+import StreamList from './components/StreamList';
+import StreamShow from './components/StreamShow';
 function App() {
   return (
     <div className="App">
-<TextInput label="Email Address" placeholder="name@example.com" />
+
+    <BrowserRouter>
+    <Link to="/streamShow">to Stream Show</Link>
+    <Link to="/">to Stream List</Link>
+    <Switch>
+                        <Route exact path="/"  component={StreamList} />
+                        <Route exact path="/streamShow"  component={StreamShow} />
+                        
+                        </Switch>
+                      </BrowserRouter>
     </div>
   );
 }

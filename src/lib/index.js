@@ -1,2 +1,2 @@
-import TextInput from "./TextInput";
-export { TextInput };
+import MicroApp1 from '../App';
+export { MicroApp1 };
