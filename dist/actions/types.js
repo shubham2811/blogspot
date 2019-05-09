@@ -1,0 +1,7 @@
+export var SIGN_IN = "SIGN_IN";
+export var SIGN_OUT = "SIGN_OUT";
+export var CREATE_STREAM = "CREATE_STREAM";
+export var FETCH_STREAMS = "FETCH_STREAMS";
+export var FETCH_STREAM = "FETCH_STREAM";
+export var DELETE_STREAM = "DELETE_STREAM";
+export var EDIT_STREAM = "EDIT_STREAM";
