@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import GoogleAuth from './GoogleAuth';
 
 var Header = function Header() {
   return React.createElement("div", {
@@ -13,7 +12,7 @@ var Header = function Header() {
   }, React.createElement(Link, {
     to: "/",
     className: "item"
-  }, "All Streames"), React.createElement(GoogleAuth, null)));
+  }, "All Streames")));
 };
 
 export default Header;

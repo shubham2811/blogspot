@@ -42,17 +42,15 @@ function (_React$Component) {
   }, {
     key: "renderAdmin",
     value: function renderAdmin(stream) {
-      if (stream.userId === this.props.currentUserId) {
-        return React.createElement("div", {
-          className: "right floated content"
-        }, React.createElement(Link, {
-          to: "/streams/edit/".concat(stream.id),
-          className: "ui button primary"
-        }, "Edit"), React.createElement(Link, {
-          to: "/streams/delete/".concat(stream.id),
-          className: "ui button negative"
-        }, "Delete"));
-      }
+      return React.createElement("div", {
+        className: "right floated content"
+      }, React.createElement(Link, {
+        to: "/streams/edit/".concat(stream.id),
+        className: "ui button primary"
+      }, "Edit"), React.createElement(Link, {
+        to: "/streams/delete/".concat(stream.id),
+        className: "ui button negative"
+      }, "Delete"));
     }
   }, {
     key: "renderList",
@@ -89,9 +87,7 @@ function (_React$Component) {
 var mapStateToProps = function mapStateToProps(state) {
   // console.log(state.streams)
   return {
-    streams: Object.values(state.streams),
-    currentUserId: state.auth.userId,
-    isSignedIn: state.auth.isSignedIn
+    streams: Object.values(state.streams)
   };
 };
 
