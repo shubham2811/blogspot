@@ -37,7 +37,7 @@ function (_React$Component) {
   }]);
 
   return Root;
-}(React.Component);
+}(React.Component); //ReactDOM.render(<Root />, document.getElementById('root'));
 
-ReactDOM.render(React.createElement(Root, null), document.getElementById('root'));
+
 export default Root;
