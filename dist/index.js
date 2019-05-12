@@ -37,7 +37,7 @@ function (_React$Component) {
   }]);
 
   return Root;
-}(React.Component); // ReactDOM.render(<StreamApp />, document.getElementById('root'));
+}(React.Component);
 
-
+ReactDOM.render(React.createElement(Root, null), document.getElementById('root'));
 export default Root;

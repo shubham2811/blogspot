@@ -25,7 +25,7 @@ class Root extends React.Component {
       )
     }
   }
-  // ReactDOM.render(<StreamApp />, document.getElementById('root'));
+  ReactDOM.render(<Root />, document.getElementById('root'));
   export default Root;
 
 

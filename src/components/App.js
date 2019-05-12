@@ -1,6 +1,5 @@
 import React from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
-import { connect } from 'react-redux';
 import StreamCreate from './streams/StreamCreate';
 import StreamDelete from './streams/StreamDelete';
 import StreamEdit from './streams/StreamEdit';
@@ -8,8 +7,8 @@ import StreamList from './streams/StreamList';
 import StreamShow from './streams/StreamShow';
 import Header from './Header';
 import history from '../history';
-class App extends React.Component{
-    render(){
+const  App = ()=>{
+   
         return (
             <div className="ui container">
     
@@ -30,6 +29,6 @@ class App extends React.Component{
     }
 
 
-}
 
-export default connect()(App)
+
+export default App
